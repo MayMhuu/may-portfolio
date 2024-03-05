@@ -119,7 +119,8 @@ export interface ShootingStarProps {
 }
 
 export interface ILinkItem {
-  url: string
+  url: string,
+  text:string
 }
 
 export interface IEffectText {
