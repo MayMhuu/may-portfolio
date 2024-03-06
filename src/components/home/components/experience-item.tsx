@@ -13,14 +13,9 @@ const ExperienceItem = ({ data }: { data: IExperienceItem }) => {
       <Column classNames="items-center justify-between w-full h-full gap-12">
         <Column classNames="items-center justify-start">
 
-          <p className="text-lg font-semibold mt-4">{data.designation}</p>
-          <div className="flex space-x-4">
-            <p className="text-[var(--textColorLight90)] text-base/6 font-medium">
-              {data.company}
-            </p>
-        
-            <NewTab url={data.link}/>
-          </div>
+          <p className="text-lg font-semibold mt-4 ">{data.designation}</p>
+         
+          <NewTab url={data.link} text={data.company} />
           <div
             className={` mt-2 flex flex-row relative gap-1 items-center justify-center px-2 py-0.5  `}
           >
