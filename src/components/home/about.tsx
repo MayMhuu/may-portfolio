@@ -11,6 +11,7 @@ import ShootingStarEffect from "@/components/common/shooting-star";
 import TalkButton from "./components/talk-button";
 import ResumeButton from "./components/resume-button";
 import socialLinks from "@/data/social-links";
+import ImageEffect from "../common/image-effect";
 
 
 const About = ({ id }: Readonly<{ id: string }>) => {
@@ -32,15 +33,15 @@ const About = ({ id }: Readonly<{ id: string }>) => {
               </p>
 
               <p className="text-lg/6 font-medium text-[var(--textColorLight)] drop_in">
-               I build things for the web.
+                I build things for the web.
               </p>
 
               <p className="text-base/normal mt-8 drop_in">
                 <Balancer>
-                  Welcome to my portfolio! 
+                  Welcome to my portfolio!
                   I am a passionate full-stack developer with 7+ years of experience. I am software enginner based in Yangon, Myanmar
                   specializing in building exceptional websites, applications and everything in between.
-                  
+
                 </Balancer>
               </p>
 
@@ -65,7 +66,7 @@ const About = ({ id }: Readonly<{ id: string }>) => {
                       <span className="text-xl text-[var(--whiteColor)]">
                         <FontAwesomeIcon icon={link.icon} />
                       </span>
-                      
+
                     </Link>
                   );
                 })}
@@ -73,24 +74,12 @@ const About = ({ id }: Readonly<{ id: string }>) => {
             </Column>
           </Column>
 
-          <Row classNames="w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] pointer-events-none justify-self-center sm:justify-self-end items-center justify-center rounded-full bg-transparent border-2 border-[var(--primaryColor40)] aspect-sqaure overflow-hidden my-auto drop_out">
-            <Row classNames="w-full h-auto items-center justify-center rounded-full bg-transparent border-[0.8rem] border-[var(--primaryColor10)] aspect-sqaure overflow-hidden pointer-events-none">
-              <Image
-                src="/images/photo.jpeg"
-                alt="profile"
-                width={400}
-                height={400}
-                sizes="100%"
-                priority
-                placeholder="blur"
-                blurDataURL="/images/photo.jpeg"
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "100%",
-                  aspectRatio: "1 / 1",
-                }}
-              />
+          <Row classNames="w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] justify-self-center sm:justify-self-end items-center justify-center rounded-full bg-transparent border-2 border-[var(--primaryColor40)] aspect-sqaure overflow-hidden my-auto drop_out">
+            <Row classNames="w-full h-auto items-center justify-center rounded-full border-[0.8rem] border-[var(--primaryColor10)] aspect-sqaure overflow-hidden ">
+            
+              <ImageEffect src="/images/photo.jpeg" alt="profile" />
+              {/* <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-indigo-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-50"></div>
+             */}
             </Row>
           </Row>
         </GridBox>
