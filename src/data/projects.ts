@@ -48,8 +48,8 @@ const projects: IProjectItem[] = [
   {
     id: "credit",
     title: "Credit Card Application",
-    shortDescription: "descibe",
-    description: "descibe",
+    shortDescription: "Visit any of our branches for application and submit with required documents. Bank will notify on your credit card approval and for card collection.Please take a moment to review below eligibility criteria as well as documents required for preparation of application process. ",
+    description: "AYA's innovation product, the Credit Card is designed to help customers who wants or needs a credit card without having to go through complex paperwork process. As opposed to applying a normal credit card, where proof of income or a guarantor is a prerequisite.For JCB Credit Card, We connect your financial life to your daily life. For Visa Credit Card, It's everywhere You Want to Be.",
     icon: "/images/creditLogo.png",
     repoType: RepoType.Private,
     projectType: ProjectType.JobWork,
@@ -60,7 +60,7 @@ const projects: IProjectItem[] = [
       url:"/services/ccbpDetail.jpeg",
       description:"How to use "
     },{
-      url:"services/creditCard.jpg",
+      url:"/services/creditCard.jpg",
       description:"How to register"
     },{
       url:"/services/ccbpflow.png",
