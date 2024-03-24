@@ -8,7 +8,7 @@ import skills from "@/data/skills";
 const Skills = ({ id }: { id: string }) => {
   return (
     <ResponsiveView
-      classNames="bg-[var(--bgColor)] min-h-[calc(100vh-5rem)] items-center justify-center"
+      classNames="bg-[var(--dialogColor)] min-h-[calc(100vh-5rem)] items-center justify-center"
       id={id}
     >
       <ConstraintedView classNames="p-4 py-16">

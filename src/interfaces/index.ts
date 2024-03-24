@@ -36,6 +36,7 @@ export enum ProjectType {
 export interface IProjectItem {
   id: string;
   title: string;
+  shortDescription: string;
   description: string;
   icon: string;
   repoType: RepoType;
@@ -43,8 +44,13 @@ export interface IProjectItem {
   githubUrl?: string;
   url?: string;
   tags?: string[];
-  sceenshots?: string[];
+  sceenshots?: Array<IScreenshotItem>;
   about?: string;
+}
+
+export interface IScreenshotItem {
+  url: string;
+  description: string;
 }
 
 export interface IServiceItem {
