@@ -21,6 +21,10 @@ const projects: IProjectItem[] = [
     },{
       url:"/services/bnplSystem.png",
       description:"System Diagram"
+    },
+    {
+      url:"/services/bnplPortal.png",
+      description:"How to management"
     }]
   },
   {
@@ -43,12 +47,16 @@ const projects: IProjectItem[] = [
     },{
       url:"/services/virtualFlow.png",
       description:"User Journey Flow"
+    },
+    {
+      url:"/services/prepaid.png",
+      description:"How to management"
     }]
   },
   {
     id: "credit",
     title: "Credit Card Application",
-    shortDescription: "Visit any of our branches for application and submit with required documents. Bank will notify on your credit card approval and for card collection.Please take a moment to review below eligibility criteria as well as documents required for preparation of application process. ",
+    shortDescription: "Visit any of our branches for application and submit with required documents. Bank will notify on your credit card approval and for card collection",
     description: "AYA's innovation product, the Credit Card is designed to help customers who wants or needs a credit card without having to go through complex paperwork process. As opposed to applying a normal credit card, where proof of income or a guarantor is a prerequisite.For JCB Credit Card, We connect your financial life to your daily life. For Visa Credit Card, It's everywhere You Want to Be.",
     icon: "/images/creditLogo.png",
     repoType: RepoType.Private,
@@ -65,6 +73,10 @@ const projects: IProjectItem[] = [
     },{
       url:"/services/ccbpflow.png",
       description:"User Journey Flow"
+    },
+    {
+      url:"/services/credit.png",
+      description:"How to management "
     }]
   },
 

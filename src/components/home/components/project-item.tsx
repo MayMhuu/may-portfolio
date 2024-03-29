@@ -27,9 +27,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
       onClick={() => _handleNavigateToPage(project.id)}
     >
       <Column classNames="w-full items-center justify-start">
-
         <Row classNames=" bg-var(--primaryColor20)] w-[3rem] md:w-[3.5rem] p-1 aspect-square items-center justify-center border border-[var(--textColor30)] rounded-full overflow-hidden">
-
           <Image
             src={project.icon}
             alt={`project-${project.title}`}
@@ -39,18 +37,18 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
             loading="lazy"
             placeholder="blur"
             blurDataURL={project.icon}
-            className="w-full h-full object-fill rounded-full border border-[var(--secondaryColor10)] rounded-[var(--borderRadius)] "
+            className="w-full h-full object-fill border border-[var(--secondaryColor10)] rounded-[var(--borderRadius)] "
           />
-
         </Row>
 
         <p className="text-lg/6 font-semibold mt-4">{project.title}</p>
 
         <div
-          className={`flex flex-row items-center justify-center rounded-full py-[0.05] px-[0.5rem] mt-4 capitalize text-center border ${project.repoType === RepoType.Private
-            ? "text-[var(--errorColor)] border-[var(--errorColor50)]"
-            : "text-[var(--successColor)] border-[var(--successColor50)]"
-            }`}
+          className={`flex flex-row items-center justify-center rounded-full py-[0.05] px-[0.5rem] mt-4 capitalize text-center border ${
+            project.repoType === RepoType.Private
+              ? "text-[var(--errorColor)] border-[var(--errorColor50)]"
+              : "text-[var(--successColor)] border-[var(--successColor50)]"
+          }`}
         >
           <p className="text-xs/6 font-semibold">
             {project.repoType === RepoType.Private ? "Private" : "Public"}

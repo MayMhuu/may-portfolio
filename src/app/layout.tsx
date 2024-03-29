@@ -6,7 +6,6 @@ import Script from "next/script";
 import NavBar from "@/components/navbar/NavBar";
 import ScrollToTop from "@/components/common/scroll-to-top";
 
-
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
@@ -46,17 +45,14 @@ export const metadata: Metadata = {
       url: "/mhuu.jpeg",
       rel: "icon",
       sizes: "any",
-
     },
   ],
 };
-
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <html lang="en" className={poppins.className}>
       <head>
-
         <Script id="google-analytics" strategy="afterInteractive">
           {`
           window.dataLayer = window.dataLayer || [];
@@ -67,11 +63,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
         </Script>
       </head>
 
-      <body
-        className={
-          process.env.NODE_ENV === "development" ? "debug-screens" : ""
-        }
-      >
+      <body>
         <NavBar />
         <main>{children}</main>
         <ScrollToTop />
@@ -81,4 +73,3 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
 };
 
 export default RootLayout;
-

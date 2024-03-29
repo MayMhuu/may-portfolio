@@ -8,7 +8,6 @@ import projects from "@/data/projects";
 const Projects = ({ id }: { id: string }) => {
   return (
     <ResponsiveView
-
       classNames="bg-[var(--bgColor)] min-h-[calc(100vh-5rem)] items-center justify-center"
       id={id}
     >

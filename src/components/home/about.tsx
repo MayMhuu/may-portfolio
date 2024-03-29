@@ -7,17 +7,14 @@ import ResponsiveBox from "@/components/layout/responsive-view";
 import GridBox from "@/components/layout/grid-view";
 import Column from "@/components/layout/column";
 import Row from "@/components/layout/row";
-import ShootingStarEffect from "@/components/common/shooting-star";
-import TalkButton from "./components/talk-button";
 import ResumeButton from "./components/resume-button";
 import socialLinks from "@/data/social-links";
 import ImageEffect from "../common/image-effect";
 
-
 const About = ({ id }: Readonly<{ id: string }>) => {
   return (
     <ResponsiveBox
-      classNames="bg-[var(--dialogColor)] min-h-[calc(100vh-5rem)] items-center justify-center relative"
+      classNames="bg-gradient-to-t from-[var(--dialogColor)] from-10% to-[var(--dialogColor80)] to-90% min-h-[calc(100vh-5rem)] items-center justify-center relative"
       id={id}
     >
       {/* <ShootingStarEffect /> */}
@@ -38,10 +35,10 @@ const About = ({ id }: Readonly<{ id: string }>) => {
 
               <p className="text-base/normal mt-8 drop_in">
                 <Balancer>
-                  Welcome to my portfolio!
-                  I am a passionate full-stack developer with 7+ years of experience. I am software enginner based in Yangon, Myanmar
-                  specializing in building exceptional websites, applications and everything in between.
-
+                  Welcome to my portfolio! I am a passionate full-stack
+                  developer with 7+ years of experience. I am software enginner
+                  based in Yangon, Myanmar specializing in building exceptional
+                  websites, applications and everything in between.
                 </Balancer>
               </p>
 
@@ -51,8 +48,6 @@ const About = ({ id }: Readonly<{ id: string }>) => {
             </Column>
 
             <Column classNames="mt-8 lg:mt-16 drop_out">
-
-
               <Row classNames="mt-2 gap-2">
                 {socialLinks.slice(0, 5).map((link, index) => {
                   return (
@@ -66,7 +61,6 @@ const About = ({ id }: Readonly<{ id: string }>) => {
                       <span className="text-xl text-[var(--whiteColor)]">
                         <FontAwesomeIcon icon={link.icon} />
                       </span>
-
                     </Link>
                   );
                 })}
@@ -76,10 +70,7 @@ const About = ({ id }: Readonly<{ id: string }>) => {
 
           <Row classNames="w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] justify-self-center sm:justify-self-end items-center justify-center rounded-full bg-transparent border-2 border-[var(--primaryColor40)] aspect-sqaure overflow-hidden my-auto drop_out">
             <Row classNames="w-full h-auto items-center justify-center rounded-full border-[0.8rem] border-[var(--primaryColor10)] aspect-sqaure overflow-hidden ">
-            
               <ImageEffect src="/images/photo.jpeg" alt="profile" />
-              {/* <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-indigo-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-50"></div>
-             */}
             </Row>
           </Row>
         </GridBox>
