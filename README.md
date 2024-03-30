@@ -13,12 +13,14 @@
 2. [Services]
 3. [Experiences]
 4. [Skills]
-5. [Contact]
+5. [Projects]
+6. [Contact]
 
 ## 3. Tech Stack 💻
 
 - [Next JS](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 - Libraries:
 
   - [@fortawesome/react-fontawesome](https://fontawesome.com/v5/docs/web/use-with/react)
