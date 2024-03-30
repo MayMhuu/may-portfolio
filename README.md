@@ -1,6 +1,4 @@
-# May's Portfolio  - [Live](https://maymyatmon-portfolio.vercel.app/)👌 Best Portfolio
-
-
+# May's Portfolio - [Live](https://maymyatmon-portfolio.vercel.app/)👌 Best Portfolio
 
 ## 1. Features ✅
 
@@ -25,7 +23,6 @@
 
   - [@fortawesome/react-fontawesome](https://fontawesome.com/v5/docs/web/use-with/react)
   - [framer-motion](https://www.framer.com/)
-
 
 ## 4. Getting Started ▶️
 
@@ -69,4 +66,4 @@ Open your web browser and go to [http://localhost:8070](http://localhost:8070) t
 
 That's it! You're now ready to explore the project locally.
 
-Happy coding and designing! 🚀🎨
+Enjoy coding and designing! 🚀🎨
