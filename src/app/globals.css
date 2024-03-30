@@ -79,16 +79,7 @@
   --primaryColor: rgba(243, 202, 0.13);
 
   --secondaryColor10: rgba(184, 53, 143, 0.1);
-  --secondaryColor20: rgba(184, 53, 143, 0.2);
-  --secondaryColor30: rgba(184, 53, 143, 0.3);
-  --secondaryColor40: rgba(184, 53, 143, 0.4);
-  --secondaryColor50: rgba(184, 53, 143, 0.5);
-  --secondaryColor60: rgba(184, 53, 143, 0.6);
-  --secondaryColor70: rgba(184, 53, 143, 0.7);
-  --secondaryColor80: rgba(184, 53, 143, 0.8);
-  --secondaryColor90: rgba(184, 53, 143, 0.9);
-  --secondaryColor100: rgba(184, 53, 143, 1);
-  --secondaryColor: rgba(184, 53, 143, 1);
+  --secondaryColor: rgb(84, 82, 69);
 
   --successColor10: rgba(30, 180, 80, 0.1);
   --successColor20: rgba(30, 180, 80, 0.2);

@@ -20,16 +20,16 @@ const navMenus: INavMenuItem[] = [
     section: "experiences",
   },
   {
-    id: "skills",
-    title: "Skills",
-    path: "/#skills",
-    section: "skills",
-  },
-  {
     id: "projects",
     title: "Projects",
     path: "/#projects",
     section: "projects",
+  },
+  {
+    id: "skills",
+    title: "Skills",
+    path: "/#skills",
+    section: "skills",
   },
   {
     id: "contact",

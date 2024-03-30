@@ -9,6 +9,7 @@ export interface INavMenuItem {
   submenu?: INavMenuItem[];
 }
 
+
 export interface IExperienceItem {
   designation: string;
   company: string;
@@ -36,6 +37,7 @@ export enum ProjectType {
 export interface IProjectItem {
   id: string;
   title: string;
+  shortDescription: string;
   description: string;
   icon: string;
   repoType: RepoType;
@@ -43,8 +45,13 @@ export interface IProjectItem {
   githubUrl?: string;
   url?: string;
   tags?: string[];
-  sceenshots?: string[];
+  sceenshots?: Array<IScreenshotItem>;
   about?: string;
+}
+
+export interface IScreenshotItem {
+  url: string;
+  description: string;
 }
 
 export interface IServiceItem {
@@ -119,7 +126,8 @@ export interface ShootingStarProps {
 }
 
 export interface ILinkItem {
-  url: string
+  url: string,
+  text:string
 }
 
 export interface IEffectText {

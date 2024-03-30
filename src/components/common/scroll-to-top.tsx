@@ -3,9 +3,10 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpLong } from "@fortawesome/free-solid-svg-icons";
-import styles from "@/app/scroll.module.scss";
+import "@/app/scroll.css";
 
-const ScrollTop = () => {
+
+const ScrollToTop = () => {
   const [showTopBtn, setShowTopBtn] = useState<boolean>(false);
 
   useEffect(() => {
@@ -30,13 +31,13 @@ const ScrollTop = () => {
   };
 
   return (
-    <div className={styles.topToBottom}>
+    <div  className="topToBottom">
       {showTopBtn ? (
-        <button onClick={goToTop} className={styles.btnStyle}>
-          <FontAwesomeIcon icon={faArrowUpLong} className={styles.iconStyle} />
+        <button onClick={goToTop} className="btnStyle">
+          <FontAwesomeIcon icon={faArrowUpLong} className="iconStyle" />
         </button>
       ) : null}
     </div>
   );
 };
-export default ScrollTop;
+export default ScrollToTop;

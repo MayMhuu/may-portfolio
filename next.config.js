@@ -5,9 +5,6 @@ const nextConfig = {
   reactStrictMode: true,
   distDir: "build",// build dir 
   swcMinify: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
-  },
   images: {
   },
 };

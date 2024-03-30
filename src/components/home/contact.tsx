@@ -10,7 +10,7 @@ import socialLinks from "@/data/social-links";
 const Contact = ({ id }: { id: string }) => {
   return (
     <ResponsiveView
-      classNames="bg-[var(--dialogColor)] min-h-[calc(100vh-5rem)] items-center justify-center"
+      classNames="bg-[var(--bgColor)] min-h-[calc(100vh-5rem)] items-center justify-center"
       id={id}
     >
       <ConstraintedView classNames="p-4 py-10">
@@ -31,7 +31,21 @@ const Contact = ({ id }: { id: string }) => {
           </GridView>
           <div className="mt-16">
             <p className="text-md text-[var(--textColorLight90)]">
-              Loosely developed in <EffectText text="TypeScript" url="https://www.typescriptlang.org/"/> and coded in <EffectText text="Visual Studio Code" url="https://code.visualstudio.com/"/> by yours truly. Built with <EffectText text="Next.js" url="https://nextjs.org/"/> and <EffectText text="Tailwind CSS" url="https://tailwindcss.com/"/> , deployed with <EffectText text="Vercel"  url="https://vercel.com/dashboard"/>.
+              Loosely developed in{" "}
+              <EffectText
+                text="TypeScript"
+                url="https://www.typescriptlang.org/"
+              />{" "}
+              and coded in{" "}
+              <EffectText
+                text="Visual Studio Code"
+                url="https://code.visualstudio.com/"
+              />{" "}
+              by yours truly. Built with{" "}
+              <EffectText text="Next.js" url="https://nextjs.org/" /> and{" "}
+              <EffectText text="Tailwind CSS" url="https://tailwindcss.com/" />{" "}
+              , deployed with{" "}
+              <EffectText text="Vercel" url="https://vercel.com/dashboard" />.
             </p>
 
             <p className="text-center mx-auto mt-2 text-lg font-semibold">
@@ -40,7 +54,6 @@ const Contact = ({ id }: { id: string }) => {
               freelancing.
             </p>
           </div>
-
         </Column>
       </ConstraintedView>
     </ResponsiveView>

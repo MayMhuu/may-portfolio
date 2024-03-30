@@ -27,7 +27,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
       onClick={() => _handleNavigateToPage(project.id)}
     >
       <Column classNames="w-full items-center justify-start">
-        <Row classNames="w-[2.5rem] md:w-[3rem] aspect-square items-center justify-center">
+        <Row classNames=" bg-var(--primaryColor20)] w-[3rem] md:w-[3.5rem] p-1 aspect-square items-center justify-center border border-[var(--textColor30)] rounded-full overflow-hidden">
           <Image
             src={project.icon}
             alt={`project-${project.title}`}
@@ -37,7 +37,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
             loading="lazy"
             placeholder="blur"
             blurDataURL={project.icon}
-            className="w-full h-full object-cover aspect-square"
+            className="w-full h-full object-fill border border-[var(--secondaryColor10)] rounded-[var(--borderRadius)] "
           />
         </Row>
 
@@ -88,7 +88,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
 
       <Column classNames="w-full items-center">
         <p className="text-center text-base/6">
-          <Balancer>{project.description}</Balancer>
+          <Balancer>{project.shortDescription}</Balancer>
         </p>
 
         {project.tags && project.tags.length > 0 ? (

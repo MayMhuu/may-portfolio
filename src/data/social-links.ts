@@ -23,12 +23,6 @@ const socialLinks: ISocialLinkItem[] = [
     text: Strings.linkedInUsername,
   },
   {
-    name: Strings.whatsApp,
-    url: Strings.whatsAppLink,
-    icon: faTelegram,
-    text: Strings.whatsAppUsername,
-  },
-  {
     name: Strings.instagram,
     url: Strings.instagramLink,
     icon: faInstagram,
